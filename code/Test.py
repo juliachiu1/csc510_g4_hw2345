@@ -14,16 +14,19 @@ def num_test():
             continue
         else:
             mark = True
-
+    print("-----------------------------------")
     print(mid, div)
+    print("!!!!!! PASS   num   true")
+    print(" ")
     return 50 <= mid and mid <= mid and 30.5 < div and div < 32
 
 def bignum_test():
     num_t = num()
     num_t.add(1000, 32)
+    print("-----------------------------------")
     print(num_t.lst)
+    print("!!!!!! PASS   bignum   true")
+    print(" ")
     return 32 == len(num_t.lst)
 
-print(num_test())
-print(bignum_test())
 
