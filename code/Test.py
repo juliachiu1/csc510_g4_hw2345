@@ -1,4 +1,5 @@
 from Num import num
+from Sym import Sym
 
 def num_test():
 
@@ -29,4 +30,14 @@ def bignum_test():
     print(" ")
     return 32 == len(num_t.lst)
 
+def sym_test():
+    sym = Sym()
+    lst = ['a','a','a','a','b','b','c']
+    for x in lst:   sym.add(x)
+    mode, entropy = sym.mid(), sym.div()
+    entropy = (1000 * entropy) // 1 / 1000
+    print('-----------------------------------')
+    print('{:div ' + str(entropy) + ' :mid ' + mode + '}')
+    print('!!!!!!	PASS	sym	true\n')
+    return mode == 'a' and 1.37 <= entropy and entropy <= 1.38
 
