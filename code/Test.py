@@ -2,28 +2,26 @@ from Num import num
 from Sym import Sym
 
 def num_test():
+    num_t = num()
+    for i in range(1, 101):
+        num_t.add(i)
+    div = num_t.div()
+    mid = num_t.mid()
 
-    mark = False
-
-    while not mark:
-        num_t = num()
-        num_t.add(100, 100)
-        div = num_t.div()
-        mid = num_t.mid()
-
-        if (mid < 50 or mid > 52) or (div < 30.5 or div > 32):
-            continue
-        else:
-            mark = True
-    print("-----------------------------------")
-    print(mid, div)
-    print("!!!!!! PASS   num   true")
-    print(" ")
-    return 50 <= mid and mid <= mid and 30.5 < div and div < 32
+    if (mid < 50 or mid > 52) or (div < 30.5 or div > 32):
+        print("-----------------------------------")
+        print(mid, div)
+        print("!!!!!! PASS   num   true")
+        print(" ")
+        return True
+    else: 
+        return False
 
 def bignum_test():
     num_t = num()
-    num_t.add(1000, 32)
+    for i in range(1, 1001):
+        num_t.add(i, 32)
+    num_t.lst.sort()
     print("-----------------------------------")
     print(num_t.lst)
     print("!!!!!! PASS   bignum   true")
@@ -40,4 +38,3 @@ def sym_test():
     print('{:div ' + str(entropy) + ' :mid ' + mode + '}')
     print('!!!!!!	PASS	sym	true\n')
     return mode == 'a' and 1.37 <= entropy and entropy <= 1.38
-
