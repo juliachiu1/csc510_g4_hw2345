@@ -2,8 +2,8 @@ from Csv import Csv
 
 class Col:
     def __init__(self):
-        file = Csv()
-        file.read_csv()
+        self.file = Csv()
+        self.file.read_csv()
         self.names = file.data[0][:]
         self.x = []
         self.y = []
