@@ -1,5 +1,6 @@
 from Num import num
 from Sym import Sym
+from Data import Data
 
 def num_test():
     num_t = num()
@@ -38,3 +39,29 @@ def sym_test():
     print('{:div ' + str(entropy) + ' :mid ' + mode + '}')
     print('!!!!!!	PASS	sym	true\n')
     return mode == 'a' and 1.37 <= entropy and entropy <= 1.38
+
+def data_test():
+    data = Data()
+    print('-----------------------------------')
+    for c in data.col.y:
+        print(data.data(c))
+    print('!!!!!!	PASS	data	true\n')
+
+def stats_test():
+    data = Data()
+    print('-----------------------------------')
+    print(data.stats(2,data.col.x,"mid"))
+    print(data.stats(3,data.col.x,"div"))
+    print(data.stats(2,data.col.y,"mid"))
+    print(data.stats(3,data.col.y,"div"))
+    print('!!!!!!	PASS	stats	true\n')
+
+def main():
+    bignum_test()
+    data_test()
+    num_test()
+    stats_test()
+    sym_test()
+
+if __name__ == "__main__":
+    main()
