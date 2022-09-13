@@ -4,18 +4,20 @@ class Col:
     def __init__(self):
         self.file = Csv()
         self.file.read_csv()
-        self.names = file.data[0][:]
+        self.names = self.file.data[0][:]
         self.x = []
         self.y = []
+        self.at = {}
 
     def new(self):
-        for items in self.names:
+        for i,items in enumerate(self.names):
             if "+" in items or "-" in items:
                 self.y.append(items)
             elif":" in items:
                 continue
             else:
                 self.x.append(items)
+            self.at[items] = i + 1
 
         #print(self.x)
         #print(self.y)
@@ -23,4 +25,3 @@ class Col:
 
 #test = Col()
 #test.new()
-
