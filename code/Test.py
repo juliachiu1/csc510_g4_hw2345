@@ -1,6 +1,7 @@
 from Num import num
 from Sym import Sym
 from Data import Data
+from Csv import Csv
 
 def num_test():
     num_t = num()
@@ -55,6 +56,15 @@ def stats_test():
     print(data.stats(2,data.col.y,"mid"))
     print(data.stats(3,data.col.y,"div"))
     print('!!!!!!	PASS	stats	true\n')
+    
+def csv_test()
+    csv = Csv()
+    print_csv = test_data.read_csv()
+    for i in range(0, 10):
+        print('{' + ' '.join(print_test_data[i]) + '}')
+
+    print('!!!!!!	PASS	csv	true\n')
+    
 
 def main():
     bignum_test()
@@ -62,6 +72,7 @@ def main():
     num_test()
     stats_test()
     sym_test()
+    csv_test()
 
 if __name__ == "__main__":
     main()
