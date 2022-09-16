@@ -59,9 +59,9 @@ def stats_test():
     
 def csv_test()
     csv = Csv()
-    print_csv = test_data.read_csv()
+    print_csv = csv.read_csv()
     for i in range(0, 10):
-        print('{' + ' '.join(print_test_data[i]) + '}')
+        print('{' + ' '.join(print_csv[i]) + '}')
 
     print('!!!!!!	PASS	csv	true\n')
     
