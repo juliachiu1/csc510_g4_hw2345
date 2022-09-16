@@ -57,7 +57,7 @@ def stats_test():
     print(data.stats(3,data.col.y,"div"))
     print('!!!!!!	PASS	stats	true\n')
     
-def csv_test()
+def csv_test():
     csv = Csv()
     print_csv = csv.read_csv()
     for i in range(0, 10):
