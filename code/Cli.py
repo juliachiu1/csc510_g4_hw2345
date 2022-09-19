@@ -31,7 +31,7 @@ def coerce(s):
         try:
             return float(s)
         except ValueError:
-            return fun(s.strip())
+            return fun(bool(re.match(r"^\s*(.*)\s*$", 'nothing')))
 
 def cli(t):
     for slot in t:
