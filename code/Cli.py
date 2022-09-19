@@ -17,12 +17,12 @@ OPTIONS:
 
     pattern = re.compile(r"\n [-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)")
     for match in pattern.finditer(help):
-        the[match.group(1)] = match.group(2)
+        the[match.group(1)] = coerce(match.group(2))
     return the
 
 def coerce(s):
     def fun(s1):
-        s1 = True if s1=="true" else (False if s1=="false" else s1)
+        s1 = True if (s1=="True" or s1=="true") else (False if (s1=="false" or s1=="False") else s1)
         return s1
 
     try:
@@ -31,20 +31,19 @@ def coerce(s):
         try:
             return float(s)
         except ValueError:
-            return fun(bool(re.match(r"^\s*(.*)\s*$", 'nothing')))
+            search = re.search(r"^\s*(.*)\s*$", s)
+            return fun(search.group(1))
 
 def cli(t):
     for slot in t:
-        # print("slot: "+slot)
         v = str(t[slot])
-        for n, x in enumerate(sys.argv):
-            # print("x: "+x)
-            # print("slot[0:1]: "+slot[0:1])
-            if(x == "-"+slot[0:1] or x == "--"+slot):
-                v = "true" if v=="false" else ("false" if v=="true" else sys.argv[n+1])
-                # print("v: "+v)
+        if(len(sys.argv) > 1):
+            for n, x in enumerate(sys.argv):
+                if(x == "-"+slot[0:1] or x == "--"+slot):
+                    v = "true" if v=="false" else ("false" if v=="true" else sys.argv[n+1])
         t[slot] = coerce(v)
-    if t["help"]:
+
+    if t['help']:
         sys.exit("\nhelp\n") 
     return t
 
