@@ -1,8 +1,7 @@
 import sys
 import re
 
-def setup(the):
-    help = """ 
+help = """ 
 CSV : summarized csv file
 (c) 2022 Tim Menzies <timm@ieee.org> BSD-2 license
 USAGE: lua seen.lua [OPTIONS]
@@ -15,6 +14,7 @@ OPTIONS:
  -s  --seed      random number seed                    = 10019
  -S  --seperator feild seperator                       = , ]]"""
 
+def setup(the):
     pattern = re.compile(r"\n [-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)")
     for match in pattern.finditer(help):
         the[match.group(1)] = coerce(match.group(2))
@@ -40,11 +40,11 @@ def cli(t):
         if(len(sys.argv) > 1):
             for n, x in enumerate(sys.argv):
                 if(x == "-"+slot[0:1] or x == "--"+slot):
-                    v = "true" if v=="false" else ("false" if v=="true" else sys.argv[n+1])
+                    v = "true" if (v=="false" or v=="False") else ("false" if (v=="true" or v=="True") else sys.argv[n+1])
         t[slot] = coerce(v)
 
     if t['help']:
-        sys.exit("\nhelp\n") 
+        sys.exit("\n"+str(help)+"\n") 
     return t
 
 the = {}
