@@ -3,7 +3,7 @@ import csv
 
 class Csv:
     def __init__(self):
-        self.filename = '../data/auto93.csv'
+        self.filename = '/data/auto93.csv'
         self.count = 0
         self.data = []
 
