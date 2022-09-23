@@ -11,8 +11,6 @@ Feel free to report a bug or add some new functions!
 
 ## 🪲How to report a bug🪲
 Create a new issue to let us know!
-<img width="867" alt="BugReport" src="https://user-images.githubusercontent.com/60029373/186948887-8483c99e-4c46-47a7-b43f-f316087aaa12.png">
-
 
 ## 💡How to submit a change💡
 Create a new branch and start a pull request with detailed discription about the change.
