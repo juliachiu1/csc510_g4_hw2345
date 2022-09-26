@@ -1,4 +1,4 @@
-# HW5 GitHub URL3 rubric Assessment
+# Rubric Assessment
 Evaluation for: https://github.com/sohambapat/SWE-Group-32-Assignments
 |Notes|Score (Total= 58)|evidence|
 |-----|-----------------|-------------|
