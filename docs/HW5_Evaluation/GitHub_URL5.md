@@ -1,12 +1,12 @@
 # Rubric Assessment
 Evaluation for: https://github.com/arnab-95/se-group38-hw
-|Notes|Score (Total= )|evidence|
+|Notes|Score (Total= 30)|evidence|
 |-----|-----------------|-------------|
 |Video1| 0 |Not applicable|
 |Video2| 0 |Not applicable|
 |Workload is spread over the whole team (one team member did far less than other teammates)|  3 |Evidence in GH|
 |Number of commits|  3 |Evidence in GH|
-|Number of commits: by different people|  2  |Evidence in GH|
+|Number of commits: by different people|  3  |Evidence in GH|
 |Issues reports: |  0  |No issue|
 |Issues are being closed|  0 |No issue|
 |DOI badge: exists|  3 |Evidence in GH|
