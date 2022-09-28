@@ -2,8 +2,8 @@
 Evaluation for: https://github.com/arnab-95/se-group38-hw
 |Notes|Score (Total= )|evidence|
 |-----|-----------------|-------------|
-|Video1|  ||
-|Video2|  ||
+|Video1| 0 ||
+|Video2| 0 ||
 |Workload is spread over the whole team (one team member did far less than other teammates)|   ||
 |Number of commits|   ||
 |Number of commits: by different people|    ||
