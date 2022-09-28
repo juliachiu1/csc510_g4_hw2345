@@ -1,10 +1,10 @@
 # Rubric Assessment
 Evaluation for: https://github.com/sam16222/CSC510_43.git
-|Notes|Score (Total= )|evidence|
+|Notes|Score (Total=39 )|evidence|
 |-----|-----------------|-------------|
 |Video1| 0 |Not applicable|
 |Video2| 0 |Not applicable|
-|Workload is spread over the whole team (one team member did far less than other teammates)|  2 |Evidence in GH|
+|Workload is spread over the whole team (one team member did far less than other teammates)|  3 |Evidence in GH|
 |Number of commits|  3 ||
 |Number of commits: by different people|  3  ||
 |Issues reports: |  0  ||
@@ -27,7 +27,7 @@ Evaluation for: https://github.com/sam16222/CSC510_43.git
 |Issues are discussed before they are closed|  0 |No issues|
 |Chat channel: exists|  0  |Cannot tell|
 |Test cases: a large proportion of the issues related to handling failing cases.| 0  ||
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files| 0  ||
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files|  3 ||
 |Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 0  ||
 |Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|0   ||
 |Evidence that the members of the team are working across multiple places in the code base| 3  |Evidence in GH|
