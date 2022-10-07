@@ -5,7 +5,7 @@ from Num import num
 from Sym import Sym
 from Data import Data
 from Csv import Csv
-from Test import Test
+from test_ import Test
 # from Cli import Cli
 import re
 import sys
@@ -62,12 +62,12 @@ def main():
 
     test = Test()
     result = []
-    result.append(test.bignum_test())
-    result.append(test.data_test())
-    result.append(test.num_test())
-    result.append(test.stats_test())
-    result.append(test.sym_test())
-    result.append(test.csv_test())
+    result.append(test.test_bignum())
+    result.append(test.test_data())
+    result.append(test.test_num())
+    result.append(test.test_stats())
+    result.append(test.test_sym())
+    result.append(test.test_csv())
 
     the = {}
     the = setup(the)
@@ -87,7 +87,6 @@ def main():
 
     print(result.count(True), " test cases passed")
     print(result.count(False), " test cases failed")
-
 
 if __name__ == '__main__':
     main()

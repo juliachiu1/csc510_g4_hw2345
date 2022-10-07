@@ -30,3 +30,13 @@ jobs:
       - name: Run Engine.py
         run: |
           python3 code/Engine.py
+      - name: Run tests and collect coverage
+        run: pytest --cov ./code
+      - name: Upload coverage reports to Codecov
+        run: |
+          # Replace `linux` below with the appropriate OS
+          # Options are `alpine`, `linux`, `macos`, `windows`
+          curl -Os https://uploader.codecov.io/latest/linux/codecov
+
+          chmod +x codecov
+          ./codecov

@@ -5,7 +5,7 @@ from Csv import Csv
 
 class Test:
 
-    def num_test(self):
+    def test_num(self):
         num_t = num()
         for i in range(1, 101):
             num_t.add(i)
@@ -21,7 +21,7 @@ class Test:
         else: 
             return False
 
-    def bignum_test(self):
+    def test_bignum(self):
         num_t = num()
         for i in range(1, 1001):
             num_t.add(i, 32)
@@ -32,7 +32,7 @@ class Test:
         print(" ")
         return 32 == len(num_t.lst)
 
-    def sym_test(self):
+    def test_sym(self):
         sym = Sym()
         lst = ['a','a','a','a','b','b','c']
         for x in lst:   sym.add(x)
@@ -43,7 +43,7 @@ class Test:
         print('!!!!!!	PASS	sym	true\n')
         return mode == 'a' and 1.37 <= entropy and entropy <= 1.38
 
-    def data_test(self):
+    def test_data(self):
         data = Data()
         print('-----------------------------------')
         for c in data.col.y:
@@ -51,7 +51,7 @@ class Test:
         print('!!!!!!	PASS	data	true\n')
         return True
 
-    def stats_test(self):
+    def test_stats(self):
         data = Data()
         print('-----------------------------------')
         print(data.stats(2,data.col.x,"mid"))
@@ -61,7 +61,7 @@ class Test:
         print('!!!!!!	PASS	stats	true\n')
         return True
         
-    def csv_test(self):
+    def test_csv(self):
         csv = Csv()
         print_csv = csv.read_csv()
         for i in range(0, 10):
