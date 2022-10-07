@@ -30,7 +30,6 @@ jobs:
       - name: Run Engine.py
         run: |
           python3 code/Engine.py
-          - name: Run tests and collect coverage
       - name: Run tests and collect coverage
         run: pytest --cov ./code
       - name: Upload coverage reports to Codecov
