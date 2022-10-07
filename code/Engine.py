@@ -88,7 +88,6 @@ def main():
     print(result.count(True), " test cases passed")
     print(result.count(False), " test cases failed")
 
-
 if __name__ == '__main__':
     main()
 
