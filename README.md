@@ -2,6 +2,7 @@
 <a href="https://github.com/juliachiu1/csc510_g4_hw2345/blob/main/LICENSE"><img 
 alt="License" src="https://img.shields.io/badge/license-MIT-green"></a>
 [![Build](https://github.com/juliachiu1/csc510_g4_hw2345/actions/workflows/test.yml/badge.svg?branch=juliachiu1-patch-2)](https://github.com/juliachiu1/csc510_g4_hw2345/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/juliachiu1/csc510_g4_hw2345/branch/main/graph/badge.svg?token=Q0PYFGMI1G)](https://codecov.io/gh/juliachiu1/csc510_g4_hw2345)
 [![DOI](https://zenodo.org/badge/532101884.svg)](https://zenodo.org/badge/latestdoi/532101884)
 
 ## Introduction
