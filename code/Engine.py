@@ -62,12 +62,12 @@ def main():
 
     test = Test()
     result = []
-    result.append(test.bignum_test())
-    result.append(test.data_test())
-    result.append(test.num_test())
-    result.append(test.stats_test())
-    result.append(test.sym_test())
-    result.append(test.csv_test())
+    result.append(test.test_bignum())
+    result.append(test.test_data())
+    result.append(test.test_num())
+    result.append(test.test_stats())
+    result.append(test.test_sym())
+    result.append(test.test_csv())
 
     the = {}
     the = setup(the)
